@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    background-color: black;
+    height: 100vh;
+    transition: 3s;
+
+}
+
+
+.circle {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+div.green {
+    top: 20px;
+    left: 20px;
+    background-color: green;
+}
+
+div.yellow {
+    top: 20px;
+    right: 20px;
+    background-color: yellow;
+}
+
+div.blue {
+    bottom: 20px;
+    left: 20px;
+    background-color: blue;
+}
+
+div.red {
+    bottom: 20px;
+    right: 20px;
+    background-color: red;
+}
+
+.bg p {
+    line-height: 100vh;
+    position: absolute;
+    font-size: 70px;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: arial;
+    text-align: center;
+    opacity: 0;
+    transition: 3s;
+}
+
+div.green:hover~.bg {
+    background-color: green;
+
+}
+
+div.green:hover~.bg p.green {
+    line-height: 100vh;
+    position: absolute;
+    font-size: 70px;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: arial;
+    text-align: center;
+    opacity: 1;
+}
+
+div.red:hover~.bg {
+    background-color: red;
+
+}
+
+div.red:hover~.bg p.red {
+    line-height: 100vh;
+    position: absolute;
+    font-size: 70px;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: arial;
+    text-align: center;
+    opacity: 1;
+}
+
+div.yellow:hover~.bg {
+    background-color: yellow;
+
+}
+
+div.yellow:hover~.bg p.yellow {
+    line-height: 100vh;
+    position: absolute;
+    font-size: 70px;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: arial;
+    text-align: center;
+    opacity: 1;
+}
+
+div.blue:hover~.bg {
+    background-color: blue;
+
+}
+
+div.blue:hover~.bg p.blue {
+    line-height: 100vh;
+    position: absolute;
+    font-size: 70px;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: arial;
+    text-align: center;
+    opacity: 1;
+}
